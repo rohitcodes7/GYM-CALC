@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gym Macro Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>💪 Gym Diet & Macro Calculator</h1>
+
+  <input type="number" id="weight" placeholder="Weight (kg)">
+  <input type="number" id="height" placeholder="Height (cm)">
+  <input type="number" id="age" placeholder="Age">
+
+  <select id="goal">
+    <option value="maintain">Maintain</option>
+    <option value="bulk">Bulk</option>
+    <option value="cut">Cut</option>
+  </select>
+
+  <button onclick="calculate()">Calculate</button>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
