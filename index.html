@@ -1,44 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Gym Macro Calculator</title>
+  <title>Macro Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<div id="loader"><div class="spinner"></div></div>
 
-  <h1 class="title">💪 Macro Calculator</h1>
+<div class="center-box">
+  <h1>Macro Calculator</h1>
 
-  <div class="card">
+  <input type="number" id="weight" placeholder="Weight (kg)">
+  <input type="number" id="height" placeholder="Height (cm)">
+  <input type="number" id="age" placeholder="Age">
 
-    <input type="number" id="weight" placeholder="Weight (kg)">
-    <input type="number" id="height" placeholder="Height (cm)">
-    <input type="number" id="age" placeholder="Age">
+  <select id="goal">
+    <option value="maintain">Maintain</option>
+    <option value="gain">Muscle Gain</option>
+    <option value="loss">Fat Loss</option>
+  </select>
 
-    <select id="goal">
-      <option value="maintain">Maintain</option>
-      <option value="gain">Muscle Gain</option>
-      <option value="loss">Fat Loss</option>
-    </select>
+  <input type="number" id="budget" placeholder="Daily Budget (₹)">
 
-    <input type="number" id="budget" placeholder="Daily Budget (₹)">
-
-    <button onclick="calculate()">Calculate</button>
-
-  </div>
-
-  <div class="card result" id="result"></div>
-
-  <div class="card tracker">
-    <h2>🎯 Progress Tracker</h2>
-    <input type="number" id="currentWeight" placeholder="Current Weight">
-    <input type="number" id="targetWeight" placeholder="Target Weight">
-    <button onclick="trackProgress()">Track</button>
-    <p id="progressResult"></p>
-  </div>
-
+  <button onclick="goToResult()">Calculate →</button>
 </div>
 
 <script src="script.js"></script>
