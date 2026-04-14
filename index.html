@@ -8,21 +8,37 @@
 <body>
 
 <div class="container">
-  <h1>💪 Gym Diet & Macro Calculator</h1>
 
-  <input type="number" id="weight" placeholder="Weight (kg)">
-  <input type="number" id="height" placeholder="Height (cm)">
-  <input type="number" id="age" placeholder="Age">
+  <h1 class="title">💪 Macro Calculator</h1>
 
-  <select id="goal">
-    <option value="maintain">Maintain</option>
-    <option value="bulk">Bulk</option>
-    <option value="cut">Cut</option>
-  </select>
+  <div class="card">
 
-  <button onclick="calculate()">Calculate</button>
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <input type="number" id="height" placeholder="Height (cm)">
+    <input type="number" id="age" placeholder="Age">
 
-  <div id="result"></div>
+    <select id="goal">
+      <option value="maintain">Maintain</option>
+      <option value="gain">Muscle Gain</option>
+      <option value="loss">Fat Loss</option>
+    </select>
+
+    <input type="number" id="budget" placeholder="Daily Budget (₹)">
+
+    <button onclick="calculate()">Calculate</button>
+
+  </div>
+
+  <div class="card result" id="result"></div>
+
+  <div class="card tracker">
+    <h2>🎯 Progress Tracker</h2>
+    <input type="number" id="currentWeight" placeholder="Current Weight">
+    <input type="number" id="targetWeight" placeholder="Target Weight">
+    <button onclick="trackProgress()">Track</button>
+    <p id="progressResult"></p>
+  </div>
+
 </div>
 
 <script src="script.js"></script>
