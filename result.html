@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader"><div class="spinner"></div></div>
+
+<div class="result-container">
+
+  <h1>Your Plan</h1>
+
+  <canvas id="chart" width="300" height="300"></canvas>
+
+  <div id="step1" class="step">Calories: <span id="cal"></span></div>
+  <div id="step2" class="step">Protein: <span id="protein"></span></div>
+  <div id="step3" class="step">Carbs: <span id="carbs"></span></div>
+  <div id="step4" class="step">Fat: <span id="fat"></span></div>
+
+  <div id="dietQuestion" class="hidden">
+    <p>Want a diet plan?</p>
+    <button onclick="showDiet()">Yes</button>
+  </div>
+
+  <div id="dietPlan" class="hidden"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
